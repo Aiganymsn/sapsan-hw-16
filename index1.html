@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Object</title>
+</head>
+
+<body>
+   <script>
+
+      // task 1
+      const arr = [];
+      arr.name = 'Saule';
+      arr.surname = 'Nazarbayeva';
+      arr.name = 'Akmaral';
+      delete arr.name
+
+
+      // task 2 
+      function isEmpty(obj) {
+         for (let key in obj) {
+            return false;
+         }
+
+         return true;
+      }
+
+      // task 3
+
+      const myFamily = new Object({
+         name: 'Aiganym',
+         surname: 'Sagaliyeva',
+         location: 'Almaty',
+         age: 25,
+         siblings: 2,
+         father: {
+            name: 'Nurum',
+            age: 46,
+            'place of work': 'National park',
+            position: 'biologist',
+            hobby: 'photography',
+         },
+         mother: {
+            name: 'Dinara',
+            age: 45,
+            'place of work': 'school',
+            position: 'librarian',
+            hobby: 'singing',
+         },
+         sis: {
+            name: 'Aiaulym',
+            age: 22,
+            'place of work': 'hospital',
+            position: 'gynecologist',
+            hobby: 'knit',
+            university: 'Astana Medical University'
+         },
+         sister: {
+            name: 'Aisulu',
+            age: 21,
+            'place of work': 'kindergarten',
+            position: 'teacher',
+            hobby: 'SMM',
+            university: 'Eurasian National University',
+            status: 'married',
+         }
+      });
+
+   </script>
+</body>
+
+</html>
